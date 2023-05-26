@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\ViewUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Route::get('user', [CustomAuthController::class, 'dashboard']);
+Route::get('user',[ViewUserController::class,'viewUser'])->name('viewUser');
+Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
+
+Route::get('/product', function () {
+    return view('product');
 });
