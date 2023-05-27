@@ -3,11 +3,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Hash;
 use Session;
-use App\Models\User;
+use App\Models\Admin;
 use Illuminate\Support\Facades\Auth;
 
 //Unknow
-class CustomAuthController extends Controller
+class CustomAuthAdminController extends Controller
 {
     public function index()
     {
@@ -22,20 +22,20 @@ class CustomAuthController extends Controller
         ]);
 
         $credentials = $request->only('username', 'password');
-        if (Auth::attempt($credentials)) {
-            return redirect()->intended('user')
+        if (Admin::attempt($credentials)) {
+            return redirect()->intended('admin')
                 ->withSuccess('Signed in');
         }
         
         return redirect("loginAdmin")->withSuccess('Login details are not valid');
     }
 
-    public function registration()
+    public function registrationAdmin()
     {
         return view('auth.registrationAdmin');
     }
 
-    public function customRegistration(Request $request)
+    public function customRegistrationAdmin(Request $request)
     {
         $request->validate([
             // 'name' => 'required',
@@ -52,7 +52,7 @@ class CustomAuthController extends Controller
 
     public function create(array $data)
     {
-        return User::create([
+        return Admin::create([
             'fullname' => $data['fullname'],
             'email' => $data['email'],
             'username' => $data['username'],

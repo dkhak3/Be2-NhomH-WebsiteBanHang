@@ -1,37 +1,16 @@
-<?php
-require_once('./config/database.php');
-spl_autoload_register(function ($className) {
-    require_once("./app/models/$className.php");
-});
-session_start();
-if (isset($_SESSION['admin'])) unset($_SESSION['admin']);
-if (isset($_SESSION['search'])) unset($_SESSION['search']);
-if (isset($_POST['accountName']) && $_POST['password']) {
-    $adminAccountName = $_POST['accountName'];
-    $adminPassword = $_POST['password'];
-    $adminModel = new AccountModel();
-    if ($adminModel->loginAdmin($adminAccountName, $adminPassword)) {
-        $_SESSION['admin'] = $adminAccountName;
-        header('Location: admin.php');
-    } else {
-        header('Location: adminsignin.php');
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Admin Login</title>
-    <link rel='shortcut icon' href='./assets/img/icon/login.png'/>
+    <title>Admin Register</title>
+    <link rel='shortcut icon' href='./assets/img/icon/edit.png'/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link rel="icon" href="{{ asset ('/img/favicon.ico') }}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,8 +28,6 @@ if (isset($_POST['accountName']) && $_POST['password']) {
     <!-- Customized Bootstrap Stylesheet -->
     <link rel="stylesheet" href="{{ asset ('/css/bootstrap.min.css') }}">
 
-    <!-- <link rel="stylesheet" href="./assets/css/formUp.css"> -->
-
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{{ asset ('/css/style.css') }}">
 </head>
@@ -65,30 +42,40 @@ if (isset($_POST['accountName']) && $_POST['password']) {
 <body>
     <div class="container-xxl position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
-        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div> -->
+        </div> 
         <!-- Spinner End -->
 
 
-        <!-- Sign In Start -->
+        <!-- Sign Up Start -->
         <div class="container-fluid">
             <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                     <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
-                        <form action="adminsignin.php" method="post" id="form-1">
+                        <form action="{{ route('registerAdmin.custom') }}" method="post" id="form-1">
                             @csrf
                             <div class="d-flex align-items-center justify-content-between mb-3">
-                                <a href="/" class="">
+                                <a href="#" class="">
                                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>ADMIN</h3>
                                 </a>
-                                <h3>Sign In</h3>
+                                <h3>Sign Up</h3>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="accountName" class="form-control" id="accountName" name="accountName" placeholder="name@example.com">
-                                <label for="floatingInput">Account Name</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="jhondoe">
+                                <label for="floatingText">Username</label>
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="jhondoe">
+                                <label for="floatingText">Full name</label>
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
                                 <span class="form-message"></span>
                             </div>
                             <div class="form-floating mb-4">
@@ -101,16 +88,16 @@ if (isset($_POST['accountName']) && $_POST['password']) {
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                 </div>
-                                <a href="adminforgotpassword.php">Forgot Password</a>
+                                <a href="#">Forgot Password</a>
                             </div>
-                            <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
-                            <p class="text-center mb-0">Don't have an Account? <a href="adminsignup.php">Sign Up</a></p>
+                            <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
+                            <p class="text-center mb-0">Already have an Account? <a href="#">Sign In</a></p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Sign In End -->
+        <!-- Sign Up End -->
     </div>
 
     <!-- JavaScript Libraries -->
@@ -127,24 +114,26 @@ if (isset($_POST['accountName']) && $_POST['password']) {
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="{{ asset ('/js/form.js') }}"></script>
-
     <script>
+
     // Mong muốn của chúng ta
     Validator({
         form: '#form-1',
         formGroupSelector: '.form-floating',
         errorSelector: '.form-message',
         rules: [
-            Validator.isRequired('#accountName'),
+            Validator.isRequired('#username'),
+            Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+            Validator.isRequired('#email'),
+            Validator.isEmail('#email'),
             Validator.minLength('#password', 6)
         ],
-        /*onSubmit: function(data) {
-        Call API
-        console.log(data);
-        }*/
+        // onSubmit: function(data) {
+        // // Call API
+        // console.log(data);
+        // }
     });
 
-</script>
+    </script>
 </body>
-
 </html>
