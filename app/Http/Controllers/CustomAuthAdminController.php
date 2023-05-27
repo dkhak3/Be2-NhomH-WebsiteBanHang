@@ -22,7 +22,7 @@ class CustomAuthAdminController extends Controller
         ]);
 
         $credentials = $request->only('username', 'password');
-        if (Admin::attempt($credentials)) {
+        if (Auth::attempt($credentials)) {
             return redirect()->intended('admin')
                 ->withSuccess('Signed in');
         }
