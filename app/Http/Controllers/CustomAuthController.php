@@ -39,8 +39,8 @@ class CustomAuthController extends Controller
     {
         $request->validate([
             // 'name' => 'required',
-            // 'email' => 'required|email|unique:users',
-            // 'username' => 'required',
+            'email' => 'required|email|unique:users',
+            'username' => 'required|unique:users',
             // 'password' => 'required|min:6',
         ]);
 
