@@ -14,7 +14,7 @@ class CustomAuthAdminController extends Controller
         return view('auth.loginAdmin');
     }
 
-    public function customLogin(Request $request)
+    public function customLoginAdmin(Request $request)
     {
         $request->validate([
             'username' => 'required',
