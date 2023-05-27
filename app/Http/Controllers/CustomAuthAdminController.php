@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 //Unknow
 class CustomAuthAdminController extends Controller
 {
-    public function index()
+    public function loginAdmin()
     {
         return view('auth.loginAdmin');
     }

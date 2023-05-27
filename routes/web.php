@@ -14,9 +14,9 @@ use App\Http\Controllers\CustomAuthAdminController;
 |
 */
 
-Route::get('admin', [CustomAuthAdminController::class, 'admin']);
+// Route::get('admin', [CustomAuthAdminController::class, 'admin']);
 Route::get('admin',[ViewAdminController::class,'viewAdmin'])->name('viewAdmin');
-Route::get('loginAdmin', [CustomAuthAdminController::class, 'index'])->name('login');
+Route::get('loginAdmin', [CustomAuthAdminController::class, 'loginAdmin'])->name('loginAdmin');
 Route::post('custom-loginAdmin', [CustomAuthAdminController::class, 'customLoginAdmin'])->name('loginAdmin.custom');
 Route::get('signout', [CustomAuthAdminController::class, 'signOut'])->name('signout');
 
