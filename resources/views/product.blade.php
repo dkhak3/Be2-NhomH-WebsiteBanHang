@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>products</title>
-    <link rel="shortcut icon" href="{{ asset ('/img/icon/product.png') }}">
+    <link rel='shortcut icon' href='./assets/img/icon/product.png'/>
     <link rel="stylesheet" href="{{ asset ('/css/main.css') }}">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,15 +17,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 
-@extends('index')
-@section('content')
+
 <body>
-    {{-- <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <div class="nav-bar-logo">
-                    <a href="">
-                        <img src="{{ asset ('/img/files/LOGO.png') }}" alt="Logo" style="max-width: 115px; max-height: 36px">                    
+                    <a href="index.php">
+                        <img src="{{ asset('/img/files/LOGO.png') }}" alt="Logo"
+                            style="max-width: 115px; max-height: 36px">
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="margin: auto;">
                         <li class="nav-bar-item active">
-                            <a href="" class="nav-bar-link active">
+                            <a href="{{route('index')}}" class="nav-bar-link active">
                                 <span class="nav-bar-title">
                                     Home
                                 </span>
@@ -62,40 +62,16 @@
                         <li>
                             <a href="#"><i class="fas fa-search search-btn"></i></a>
                         </li>
-                        @guest
-                            <li>
-                                <a class="nav-link" href="{{ route('login') }}"><i class="far fa-user"></i></a>
-                            </li>
-                        @else
-                            <li class="header__navbar-item header__navbar-user">
-                                <img src="{{ asset ('/img/avatar/avatar_default.jpg') }}" alt="" class="header__navbar-user-img">
-                                <span class="header__navbar-user-name">
-                                    nguyễn kha
-                                </span>
-
-                                <ul class="header__navbar-user-menu">
-                                    <li class="header__navbar-user-item">
-                                        <a href="">My Account</a>
-                                    </li>
-                                    <li class="header__navbar-user-item">
-                                        <a href="">Purchased</a>
-                                    </li>
-                                    <li class="header__navbar-user-item">
-                                        <a href="">Change Password</a>
-                                    </li>
-                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                        <a href="{{ route('signout') }}">Logout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endguest
+                        <li>
+                            <a href="formIn.php"><i class="far fa-user"></i></a>
+                        </li>
                         <li>
                             <div class="header__cart">
                                 <div class="header__cart-wrap">
                                     <i class="header__cart-icon fas fa-shopping-cart"></i>
                                     <!-- no cart: header__cart-list--no-cart -->
                                     <div class="header__cart-list header__cart-list--no-cart">
-                                        <img src="{{ asset ('/img/cart/nothing_cart.png') }}" alt="" class="header__cart-no-cart-img">
+                                        <img src="./assets/img/cart/nothing_cart.png" alt="" class="header__cart-no-cart-img">
                                         <span class="header__cart-list-no-cart-msg">
                                             No Product
                                         </span>
@@ -123,9 +99,7 @@
             </div>
         </div>
         <!-- Seach End -->
-    </header> --}}
-
- 
+    </header>
 
     <div class="container">
         <div class="row">
@@ -138,15 +112,17 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://thienhaaudio.vn/wp-content/uploads/2021/10/h95-00-600x600.jpg" class="d-block w-100" alt="beoplay-white">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://thienhaaudio.vn/wp-content/uploads/2021/10/beoplay-H95-05-600x600.jpg" class="d-block w-100" alt="beoplay-white">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://thienhaaudio.vn/wp-content/uploads/2021/10/beoplay-H95-04-600x600.jpg" class="d-block w-100" alt="beoplay-white">
-                            </div>
+                            @for ($i = 0; $i < count(explode(',', $productInfo->product_photo)); $i++)
+                                @if ($i == 0)
+                                    <div class="carousel-item active">
+                                        <img src="{{asset('/img/products/' . explode(',', $productInfo->product_photo)[$i])}}" class="d-block w-100" alt="beoplay-white">
+                                    </div>
+                                @else
+                                    <div class="carousel-item">
+                                        <img src="{{asset('/img/products/' . explode(',', $productInfo->product_photo)[$i])}}" class="d-block w-100" alt="beoplay-white">
+                                    </div>
+                                @endif
+                            @endfor
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -181,7 +157,7 @@
                         </div>
                         <div class="product-view">
                             <span class="badge text-bg-warning">
-                                10  Viewer
+                                {{$productInfo->product_view}}
                             </span>
                             <form action="#navbar" method="post">
                                 <input type="hidden" id="likedId" name="likedId" value="">                             
@@ -197,7 +173,7 @@
             <div class="col-lg-7 col-12 col-md-6">
                 <div class="product-content">
                     <div class="product-meta">
-                        <h1 class="product-title">Beoplay Silver</h1>
+                        <h1 class="product-title">{{$productInfo->product_name}}</h1>
                         <div class="review">
                             <span class="star-list">
                                 <i class="fas fa-star star-yellow"></i>
@@ -208,7 +184,7 @@
                             </span>
                             <span class="review-badge">No reviews</span>
                         </div>
-                        <p class="product_price">$888.00</p>
+                        <p class="product_price">${{$productInfo->product_price}}</p>
                         <div class="product-info">
                             <p class="product-vendor">
                                 <smaill class="text-body">Vendor: </smaill>
@@ -216,7 +192,7 @@
                             </p>
                             <p class="product-type">
                                 <smaill class="text-body">Type: </smaill>
-                                <smaill>Electronic Device</smaill>
+                                <smaill>{{$productInfo->category_name}}</smaill>
                             </p>
                             <p class="product-availability available">
                                 <i class="fas fa-check"></i>
@@ -225,7 +201,7 @@
                         </div>
 
                         <div class="product-description">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {{$productInfo->product_description}}
                         </div>
                     </div>
                     <div class="product-form-submit">
@@ -279,7 +255,7 @@
                     </div>
                 </div>
                 <div class="footer-payment col-lg-4 col-md-12 text-lg-right text-center">
-                    <img class="mb-4 lazyloaded" src="{{ asset ('/img/files/payma.png') }}" alt="">
+                    <img class="mb-4 lazyloaded" src="./assets/img/files/payma.png" alt="">
                 </div>
             </div>
         </div>
@@ -290,7 +266,6 @@
             </div>
         </a>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
@@ -340,6 +315,5 @@
             };
         </script>
 </body>
-@endsection
 
 </html>

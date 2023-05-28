@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\ViewUserController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,14 +16,5 @@ use App\Http\Controllers\ViewUserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::get('user', [CustomAuthController::class, 'dashboard']);
-Route::get('user',[ViewUserController::class,'viewUser'])->name('viewUser');
-Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
-
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/', [ProductController::class, 'index'])->name('index');
+Route::get('product/{productId}', [ProductController::class, 'viewProduct'])->name('index.viewProduct');
