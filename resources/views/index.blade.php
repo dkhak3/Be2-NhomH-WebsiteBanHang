@@ -42,7 +42,11 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <div class="nav-bar-logo">
+<<<<<<< HEAD
                     <a href="">
+=======
+                    <a href="index.php">
+>>>>>>> login-user
                         <img src="{{ asset ('/img/files/LOGO.png') }}" alt="Logo" style="max-width: 115px; max-height: 36px">
                     </a>
                 </div>
@@ -52,7 +56,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav" style="margin: auto;">
                         <li class="nav-bar-item active">
+<<<<<<< HEAD
                             <a href="" class="nav-bar-link active">
+=======
+                            <a href="index.php" class="nav-bar-link active">
+>>>>>>> login-user
                                 <span class="nav-bar-title">
                                     Home
                                 </span>
@@ -82,16 +90,27 @@
                         </li>
                         @guest
                             <li>
+<<<<<<< HEAD
                                 <a class="nav-link" href=""><i class="far fa-user"></i></a>
+=======
+                                <a class="nav-link" href="{{ route('login') }}"><i class="far fa-user"></i></a>
+>>>>>>> login-user
                             </li>
                         @else
                             <li class="header__navbar-item header__navbar-user">
                                 <img src="{{ asset ('/img/avatar/avatar_default.jpg') }}" alt="" class="header__navbar-user-img">
+<<<<<<< HEAD
                                 <span class="header__navbar-user-name">Nguyễn Kha</span>
 
                                 <ul class="header__navbar-user-menu">
                                     <li class="header__navbar-user-item">
                                         {{-- <a href="{{ route('profile') }}">My Account</a> --}}
+=======
+                                <span class="header__navbar-user-name">{{ $user['fullname'] }}</span>
+
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+>>>>>>> login-user
                                         <a href="">My Account</a>
                                     </li>
                                     <li class="header__navbar-user-item">
@@ -101,7 +120,11 @@
                                         <a href="">Change Password</a>
                                     </li>
                                     <li class="header__navbar-user-item header__navbar-user-item--separate">
+<<<<<<< HEAD
                                         <a href="">Logout</a>
+=======
+                                        <a href="{{ route('signout') }}">Logout</a>
+>>>>>>> login-user
                                     </li>
                                 </ul>
                             </li>
@@ -161,6 +184,7 @@
                                 </svg>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+<<<<<<< HEAD
                                 <li><a class="dropdown-item" href="?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                         </svg></a></li>
@@ -174,6 +198,21 @@
                                             <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                                         </svg></a></li>
                                 <li><a class="dropdown-item" href="?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+=======
+                                <li><a class="dropdown-item" href="index.php?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg></a></li>
+                                <li><a class="dropdown-item" href="index.php?sort=1">Price: low to hight <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                        </svg></a></li>
+                                <li><a class="dropdown-item" href="index.php?sort=2">Price: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                        </svg></a></li>
+                                <li><a class="dropdown-item" href="index.php?sort=3">Star: low to hight <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                        </svg></a></li>
+                                <li><a class="dropdown-item" href="index.php?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+>>>>>>> login-user
                                             <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                                         </svg></a></li>
                             </ul>
@@ -278,6 +317,7 @@
                                             </svg>
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+<<<<<<< HEAD
                                             <li><a class="dropdown-item" href="?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                                     </svg></a></li>
@@ -291,6 +331,21 @@
                                                         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                                                     </svg></a></li>
                                             <li><a class="dropdown-item" href="?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+=======
+                                            <li><a class="dropdown-item" href="index.php?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                                    </svg></a></li>
+                                            <li><a class="dropdown-item" href="index.php?sort=1">Price: low to hight <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                                    </svg></a></li>
+                                            <li><a class="dropdown-item" href="index.php?sort=2">Price: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                                    </svg></a></li>
+                                            <li><a class="dropdown-item" href="index.php?sort=3">Star: low to hight <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                                                    </svg></a></li>
+                                            <li><a class="dropdown-item" href="index.php?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+>>>>>>> login-user
                                                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                                                     </svg></a></li>
                                         </ul>
@@ -305,7 +360,11 @@
                                 <div class="product-card">
                                     <div class="product-card__image-wr">
                                         <a href="" style="max-width: 480px;">
+<<<<<<< HEAD
                                             <img src="{{ asset ('/img/products/beoplay-white.jpg') }}" alt="">
+=======
+                                            <img src="{{ asset ('/img/products/beoplay-white.jpg') }}" alt="">                                        
+>>>>>>> login-user
                                         </a>
                                     </div>
 
