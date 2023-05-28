@@ -1,11 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\CustomAuthController;
 <<<<<<< HEAD
 =======
 use App\Http\Controllers\ViewUserController;
 >>>>>>> login-user
+=======
+use App\Http\Controllers\CustomAuthAdminController;
+>>>>>>> register-admin
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +27,7 @@ Route::get('/', function () {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Route::get('user', [CustomAuthController::class, 'dashboard']);
 Route::get('user',[ViewUserController::class,'viewUser'])->name('viewUser');
@@ -33,3 +38,11 @@ Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout')
 >>>>>>> login-user
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
 Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
+=======
+// Route::get('/registration', function () {
+//     return view('auth.registrationAdmin');
+// });
+
+Route::get('registrationAdmin', [CustomAuthAdminController::class, 'registrationAdmin'])->name('register-admin');
+Route::post('custom-registrationAdmin', [CustomAuthAdminController::class, 'customRegistrationAdmin'])->name('registerAdmin.custom');
+>>>>>>> register-admin

@@ -1,8 +1,14 @@
 /********** Template CSS **********/
 :root {
+<<<<<<< HEAD
     --primary: #009CFF;
     --light: #F3F6F9;
     --dark: #191C24;
+=======
+    --primary: #009cff;
+    --light: #f3f6f9;
+    --dark: #191c24;
+>>>>>>> register-admin
 }
 
 .back-to-top {
@@ -13,25 +19,42 @@
     z-index: 99;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
+<<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear .5s;
+=======
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+>>>>>>> register-admin
     z-index: 99999;
 }
 
 #spinner.show {
+<<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear 0s;
+=======
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+>>>>>>> register-admin
     visibility: visible;
     opacity: 1;
 }
 
+<<<<<<< HEAD
 
 /*** Button ***/
 .btn {
     transition: .5s;
+=======
+/*** Button ***/
+.btn {
+    transition: 0.5s;
+>>>>>>> register-admin
 }
 
 .btn-square {
@@ -60,7 +83,10 @@
     border-radius: 50px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Layout ***/
 .sidebar {
     position: fixed;
@@ -78,7 +104,11 @@
 .content {
     margin-left: 250px;
     min-height: 100vh;
+<<<<<<< HEAD
     background: #FFFFFF;
+=======
+    background: #ffffff;
+>>>>>>> register-admin
     transition: 0.5s;
 }
 
@@ -116,7 +146,10 @@
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
@@ -130,7 +163,11 @@
 .sidebar .navbar .navbar-nav .nav-link:hover,
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+<<<<<<< HEAD
     background: #FFFFFF;
+=======
+    background: #ffffff;
+>>>>>>> register-admin
     border-color: var(--primary);
 }
 
@@ -140,7 +177,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     background: #FFFFFF;
+=======
+    background: #ffffff;
+>>>>>>> register-admin
     border-radius: 40px;
 }
 
@@ -157,10 +198,17 @@
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+<<<<<<< HEAD
     transition: .5s;
 }
 
 .sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
+=======
+    transition: 0.5s;
+}
+
+.sidebar .navbar .dropdown-toggle[aria-expanded="true"]::after {
+>>>>>>> register-admin
     transform: rotate(-180deg);
 }
 
@@ -188,7 +236,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     background: #FFFFFF;
+=======
+    background: #ffffff;
+>>>>>>> register-admin
     border-radius: 40px;
 }
 
@@ -199,10 +251,17 @@
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+<<<<<<< HEAD
     transition: .5s;
 }
 
 .content .navbar .dropdown-toggle[aria-expanded=true]::after {
+=======
+    transition: 0.5s;
+}
+
+.content .navbar .dropdown-toggle[aria-expanded="true"]::after {
+>>>>>>> register-admin
     transform: rotate(-180deg);
 }
 
@@ -212,7 +271,10 @@
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Date Picker ***/
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
@@ -240,14 +302,20 @@
     border-bottom-color: var(--primary);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Testimonial ***/
 .progress .progress-bar {
     width: 0px;
     transition: 2s;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> register-admin
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
@@ -264,10 +332,18 @@
     height: 15px;
     border: 5px solid var(--primary);
     border-radius: 15px;
+<<<<<<< HEAD
     transition: .5s;
+=======
+    transition: 0.5s;
+>>>>>>> register-admin
 }
 
 .testimonial-carousel .owl-dot.active {
     background: var(--dark);
     border-color: var(--primary);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> register-admin
