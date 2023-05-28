@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
 <<<<<<< HEAD
+<<<<<<< HEAD
     --primary: #009CFF;
     --light: #F3F6F9;
     --dark: #191C24;
@@ -9,6 +10,11 @@
     --light: #f3f6f9;
     --dark: #191c24;
 >>>>>>> register-admin
+=======
+    --primary: #009cff;
+    --light: #f3f6f9;
+    --dark: #191c24;
+>>>>>>> login-admin
 }
 
 .back-to-top {
@@ -20,31 +26,43 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear .5s;
 =======
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
 >>>>>>> register-admin
+=======
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+>>>>>>> login-admin
     z-index: 99999;
 }
 
 #spinner.show {
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear 0s;
 =======
     transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 >>>>>>> register-admin
+=======
+    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+>>>>>>> login-admin
     visibility: visible;
     opacity: 1;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /*** Button ***/
@@ -55,6 +73,11 @@
 .btn {
     transition: 0.5s;
 >>>>>>> register-admin
+=======
+/*** Button ***/
+.btn {
+    transition: 0.5s;
+>>>>>>> login-admin
 }
 
 .btn-square {
@@ -84,9 +107,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Layout ***/
 .sidebar {
     position: fixed;
@@ -105,10 +131,14 @@
     margin-left: 250px;
     min-height: 100vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
 >>>>>>> register-admin
+=======
+    background: #ffffff;
+>>>>>>> login-admin
     transition: 0.5s;
 }
 
@@ -147,9 +177,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
@@ -164,10 +197,14 @@
 .sidebar .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
 >>>>>>> register-admin
+=======
+    background: #ffffff;
+>>>>>>> login-admin
     border-color: var(--primary);
 }
 
@@ -178,10 +215,14 @@
     align-items: center;
     justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
 >>>>>>> register-admin
+=======
+    background: #ffffff;
+>>>>>>> login-admin
     border-radius: 40px;
 }
 
@@ -199,16 +240,22 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: .5s;
 }
 
 .sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
 =======
+=======
+>>>>>>> login-admin
     transition: 0.5s;
 }
 
 .sidebar .navbar .dropdown-toggle[aria-expanded="true"]::after {
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
     transform: rotate(-180deg);
 }
 
@@ -237,10 +284,14 @@
     align-items: center;
     justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
 >>>>>>> register-admin
+=======
+    background: #ffffff;
+>>>>>>> login-admin
     border-radius: 40px;
 }
 
@@ -252,16 +303,22 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: .5s;
 }
 
 .content .navbar .dropdown-toggle[aria-expanded=true]::after {
 =======
+=======
+>>>>>>> login-admin
     transition: 0.5s;
 }
 
 .content .navbar .dropdown-toggle[aria-expanded="true"]::after {
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
     transform: rotate(-180deg);
 }
 
@@ -272,9 +329,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Date Picker ***/
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
@@ -303,9 +363,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Testimonial ***/
 .progress .progress-bar {
     width: 0px;
@@ -313,9 +376,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
@@ -333,17 +399,25 @@
     border: 5px solid var(--primary);
     border-radius: 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: .5s;
 =======
     transition: 0.5s;
 >>>>>>> register-admin
+=======
+    transition: 0.5s;
+>>>>>>> login-admin
 }
 
 .testimonial-carousel .owl-dot.active {
     background: var(--dark);
     border-color: var(--primary);
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> register-admin
+=======
+}
+>>>>>>> login-admin

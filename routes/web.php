@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\CustomAuthController;
 <<<<<<< HEAD
 =======
@@ -10,6 +11,10 @@ use App\Http\Controllers\ViewUserController;
 =======
 use App\Http\Controllers\CustomAuthAdminController;
 >>>>>>> register-admin
+=======
+use App\Http\Controllers\CustomAuthAdminController;
+use App\Http\Controllers\ViewAdminController;
+>>>>>>> login-admin
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +27,7 @@ use App\Http\Controllers\CustomAuthAdminController;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('index');
 });
@@ -46,3 +52,13 @@ Route::post('custom-registration', [CustomAuthController::class, 'customRegistra
 Route::get('registrationAdmin', [CustomAuthAdminController::class, 'registrationAdmin'])->name('register-admin');
 Route::post('custom-registrationAdmin', [CustomAuthAdminController::class, 'customRegistrationAdmin'])->name('registerAdmin.custom');
 >>>>>>> register-admin
+=======
+Route::get('admin', [CustomAuthAdminController::class, 'admin']);
+Route::get('admin',[ViewAdminController::class,'viewAdmin'])->name('viewAdmin');
+Route::get('loginAdmin', [CustomAuthAdminController::class, 'loginAdmin'])->name('loginAdmin');
+Route::post('custom-loginAdmin', [CustomAuthAdminController::class, 'customLoginAdmin'])->name('loginAdmin.custom');
+Route::get('signout', [CustomAuthAdminController::class, 'signOut'])->name('signout');
+
+Route::get('registrationAdmin', [CustomAuthAdminController::class, 'registrationAdmin'])->name('register-admin');
+Route::post('custom-registrationAdmin', [CustomAuthAdminController::class, 'customRegistrationAdmin'])->name('registerAdmin.custom');
+>>>>>>> login-admin

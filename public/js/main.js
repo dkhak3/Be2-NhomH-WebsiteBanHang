@@ -5,16 +5,22 @@
     let spinner = function () {
         setTimeout(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
 =======
             if ($("#spinner").length > 0) {
                 $("#spinner").removeClass("show");
 >>>>>>> register-admin
+=======
+            if ($("#spinner").length > 0) {
+                $("#spinner").removeClass("show");
+>>>>>>> login-admin
             }
         }, 1);
     };
     spinner();
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     
@@ -55,6 +61,8 @@
 
 
 =======
+=======
+>>>>>>> login-admin
 
     // Back to top button
     $(window).scroll(function () {
@@ -91,7 +99,10 @@
         format: "L",
     });
 
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -99,6 +110,7 @@
         items: 1,
         dots: true,
         loop: true,
+<<<<<<< HEAD
 <<<<<<< HEAD
         nav : false
     });
@@ -109,6 +121,11 @@
     });
 
 >>>>>>> register-admin
+=======
+        nav: false,
+    });
+
+>>>>>>> login-admin
     // Worldwide Sales Chart
     let ctx1 = $("#worldwide-sales").get(0).getContext("2d");
     let myChart1 = new Chart(ctx1, {
@@ -116,30 +133,41 @@
         data: {
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
 <<<<<<< HEAD
+<<<<<<< HEAD
             datasets: [{
                     label: "USA",
                     data: [15, 30, 55, 65, 60, 80, 95],
                     backgroundColor: "rgba(0, 156, 255, .7)"
 =======
+=======
+>>>>>>> login-admin
             datasets: [
                 {
                     label: "USA",
                     data: [15, 30, 55, 65, 60, 80, 95],
                     backgroundColor: "rgba(0, 156, 255, .7)",
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
                 },
                 {
                     label: "UK",
                     data: [8, 35, 40, 60, 70, 55, 75],
 <<<<<<< HEAD
+<<<<<<< HEAD
                     backgroundColor: "rgba(0, 156, 255, .5)"
 =======
                     backgroundColor: "rgba(0, 156, 255, .5)",
 >>>>>>> register-admin
+=======
+                    backgroundColor: "rgba(0, 156, 255, .5)",
+>>>>>>> login-admin
                 },
                 {
                     label: "AU",
                     data: [12, 25, 45, 55, 65, 70, 60],
+<<<<<<< HEAD
 <<<<<<< HEAD
                     backgroundColor: "rgba(0, 156, 255, .3)"
                 }
@@ -152,6 +180,8 @@
 
 
 =======
+=======
+>>>>>>> login-admin
                     backgroundColor: "rgba(0, 156, 255, .3)",
                 },
             ],
@@ -161,7 +191,10 @@
         },
     });
 
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
     // Salse & Revenue Chart
     let ctx2 = $("#salse-revenue").get(0).getContext("2d");
     let myChart2 = new Chart(ctx2, {
@@ -169,24 +202,31 @@
         data: {
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
 <<<<<<< HEAD
+<<<<<<< HEAD
             datasets: [{
                     label: "Salse",
                     data: [15, 30, 55, 45, 70, 65, 85],
                     backgroundColor: "rgba(0, 156, 255, .5)",
                     fill: true
 =======
+=======
+>>>>>>> login-admin
             datasets: [
                 {
                     label: "Salse",
                     data: [15, 30, 55, 45, 70, 65, 85],
                     backgroundColor: "rgba(0, 156, 255, .5)",
                     fill: true,
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
                 },
                 {
                     label: "Revenue",
                     data: [99, 135, 170, 130, 190, 180, 270],
                     backgroundColor: "rgba(0, 156, 255, .3)",
+<<<<<<< HEAD
 <<<<<<< HEAD
                     fill: true
                 }
@@ -199,6 +239,8 @@
     
 
 =======
+=======
+>>>>>>> login-admin
                     fill: true,
                 },
             ],
@@ -207,7 +249,10 @@
             responsive: true,
         },
     });
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
 
     // Single Line Chart
     let ctx3 = $("#line-chart").get(0).getContext("2d");
@@ -215,6 +260,7 @@
         type: "line",
         data: {
             labels: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
+<<<<<<< HEAD
 <<<<<<< HEAD
             datasets: [{
                 label: "Salse",
@@ -230,6 +276,8 @@
 
 
 =======
+=======
+>>>>>>> login-admin
             datasets: [
                 {
                     label: "Salse",
@@ -244,7 +292,10 @@
         },
     });
 
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
     // Single Bar Chart
     let ctx4 = $("#bar-chart").get(0).getContext("2d");
     let myChart4 = new Chart(ctx4, {
@@ -252,49 +303,6 @@
         data: {
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
 <<<<<<< HEAD
-            datasets: [{
-                backgroundColor: [
-                    "rgba(0, 156, 255, .7)",
-                    "rgba(0, 156, 255, .6)",
-                    "rgba(0, 156, 255, .5)",
-                    "rgba(0, 156, 255, .4)",
-                    "rgba(0, 156, 255, .3)"
-                ],
-                data: [55, 49, 44, 24, 15]
-            }]
-        },
-        options: {
-            responsive: true
-        }
-    });
-
-
-=======
-            datasets: [
-                {
-                    backgroundColor: [
-                        "rgba(0, 156, 255, .7)",
-                        "rgba(0, 156, 255, .6)",
-                        "rgba(0, 156, 255, .5)",
-                        "rgba(0, 156, 255, .4)",
-                        "rgba(0, 156, 255, .3)",
-                    ],
-                    data: [55, 49, 44, 24, 15],
-                },
-            ],
-        },
-        options: {
-            responsive: true,
-        },
-    });
-
->>>>>>> register-admin
-    // Pie Chart
-    let ctx5 = $("#pie-chart").get(0).getContext("2d");
-    let myChart5 = new Chart(ctx5, {
-        type: "pie",
-        data: {
-            labels: ["Italy", "France", "Spain", "USA", "Argentina"],
 <<<<<<< HEAD
             datasets: [{
                 backgroundColor: [
@@ -314,6 +322,8 @@
 
 
 =======
+=======
+>>>>>>> login-admin
             datasets: [
                 {
                     backgroundColor: [
@@ -332,13 +342,67 @@
         },
     });
 
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin
+    // Pie Chart
+    let ctx5 = $("#pie-chart").get(0).getContext("2d");
+    let myChart5 = new Chart(ctx5, {
+        type: "pie",
+        data: {
+            labels: ["Italy", "France", "Spain", "USA", "Argentina"],
+<<<<<<< HEAD
+<<<<<<< HEAD
+            datasets: [{
+                backgroundColor: [
+                    "rgba(0, 156, 255, .7)",
+                    "rgba(0, 156, 255, .6)",
+                    "rgba(0, 156, 255, .5)",
+                    "rgba(0, 156, 255, .4)",
+                    "rgba(0, 156, 255, .3)"
+                ],
+                data: [55, 49, 44, 24, 15]
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+
+
+=======
+=======
+>>>>>>> login-admin
+            datasets: [
+                {
+                    backgroundColor: [
+                        "rgba(0, 156, 255, .7)",
+                        "rgba(0, 156, 255, .6)",
+                        "rgba(0, 156, 255, .5)",
+                        "rgba(0, 156, 255, .4)",
+                        "rgba(0, 156, 255, .3)",
+                    ],
+                    data: [55, 49, 44, 24, 15],
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+        },
+    });
+
+<<<<<<< HEAD
+>>>>>>> register-admin
+=======
+>>>>>>> login-admin
     // Doughnut Chart
     let ctx6 = $("#doughnut-chart").get(0).getContext("2d");
     let myChart6 = new Chart(ctx6, {
         type: "doughnut",
         data: {
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
+<<<<<<< HEAD
 <<<<<<< HEAD
             datasets: [{
                 backgroundColor: [
@@ -360,6 +424,8 @@
 })(jQuery);
 
 =======
+=======
+>>>>>>> login-admin
             datasets: [
                 {
                     backgroundColor: [
@@ -378,4 +444,7 @@
         },
     });
 })(jQuery);
+<<<<<<< HEAD
 >>>>>>> register-admin
+=======
+>>>>>>> login-admin

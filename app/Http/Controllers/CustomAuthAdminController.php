@@ -9,12 +9,20 @@ use Illuminate\Support\Facades\Auth;
 //Unknow
 class CustomAuthAdminController extends Controller
 {
+<<<<<<< HEAD
     public function index()
+=======
+    public function loginAdmin()
+>>>>>>> login-admin
     {
         return view('auth.loginAdmin');
     }
 
+<<<<<<< HEAD
     public function customLogin(Request $request)
+=======
+    public function customLoginAdmin(Request $request)
+>>>>>>> login-admin
     {
         $request->validate([
             'username' => 'required',
@@ -22,7 +30,11 @@ class CustomAuthAdminController extends Controller
         ]);
 
         $credentials = $request->only('username', 'password');
+<<<<<<< HEAD
         if (Admin::attempt($credentials)) {
+=======
+        if (Auth::attempt($credentials)) {
+>>>>>>> login-admin
             return redirect()->intended('admin')
                 ->withSuccess('Signed in');
         }
