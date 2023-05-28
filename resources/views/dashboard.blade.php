@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <style>
         .header__cart-wrap::after {
             cursor: pointer;
@@ -34,6 +35,8 @@
 </head>
 
 =======
+=======
+>>>>>>> view-product
 </head>
 
 <style>
@@ -58,7 +61,10 @@
         cursor: pointer;
     }
 </style>
+<<<<<<< HEAD
 >>>>>>> login-user
+=======
+>>>>>>> view-product
 <body>
 
  <!-- Header Begin -->
@@ -68,10 +74,14 @@
             <div class="">
                 <a href="/">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <img src="{{ asset ('/img/files/LOGO.png') }}" alt="Logo" style="max-width: 115px; max-height: 36px">
 =======
                     <img src="{{ asset ('/img/files/LOGO.png') }}" alt="Logo" style="max-width: 115px; max-height: 36px">                
 >>>>>>> login-user
+=======
+                    <img src="https://avatars.githubusercontent.com/u/94631848?v=4" alt="Logo" style="max-width: 115px; max-height: 36px">
+>>>>>>> view-product
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,20 +93,28 @@
                     @guest
                         <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a class="nav-link" href="">
 =======
                             <a class="nav-link" href="{{ route('login') }}">
 >>>>>>> login-user
+=======
+                            <a class="nav-link" href="{{ route('login') }}">
+>>>>>>> view-product
                                 <i class="far fa-user"></i>
                             </a>
                         </li>
                     @else
                         <li class="nav-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a class="nav-link" href="">Logout</a>
 =======
                             <a class="nav-link" href="{{ route('signout') }}">Logout</a>
 >>>>>>> login-user
+=======
+                            <a class="nav-link" href="{{ route('signout') }}">Logout</a>
+>>>>>>> view-product
                         </li>
                     @endguest
                 </ul>

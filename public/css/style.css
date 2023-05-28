@@ -2,6 +2,7 @@
 :root {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     --primary: #009CFF;
     --light: #F3F6F9;
     --dark: #191C24;
@@ -15,6 +16,11 @@
     --light: #f3f6f9;
     --dark: #191c24;
 >>>>>>> login-admin
+=======
+    --primary: #009CFF;
+    --light: #F3F6F9;
+    --dark: #191C24;
+>>>>>>> view-product
 }
 
 .back-to-top {
@@ -27,15 +33,20 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear .5s;
@@ -45,10 +56,14 @@
 =======
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
 >>>>>>> login-admin
+=======
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+>>>>>>> view-product
     z-index: 99999;
 }
 
 #spinner.show {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     transition: opacity .5s ease-out, visibility 0s linear 0s;
@@ -58,16 +73,23 @@
 =======
     transition: opacity 0.5s ease-out, visibility 0s linear 0s;
 >>>>>>> login-admin
+=======
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+>>>>>>> view-product
     visibility: visible;
     opacity: 1;
 }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
 
 /*** Button ***/
 .btn {
     transition: .5s;
+<<<<<<< HEAD
 =======
 /*** Button ***/
 .btn {
@@ -78,6 +100,8 @@
 .btn {
     transition: 0.5s;
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
 }
 
 .btn-square {
@@ -108,11 +132,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Layout ***/
 .sidebar {
     position: fixed;
@@ -132,6 +160,7 @@
     min-height: 100vh;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
@@ -139,6 +168,9 @@
 =======
     background: #ffffff;
 >>>>>>> login-admin
+=======
+    background: #FFFFFF;
+>>>>>>> view-product
     transition: 0.5s;
 }
 
@@ -178,11 +210,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
     padding: 7px 20px;
@@ -198,6 +234,7 @@
     color: var(--primary);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
@@ -205,6 +242,9 @@
 =======
     background: #ffffff;
 >>>>>>> login-admin
+=======
+    background: #FFFFFF;
+>>>>>>> view-product
     border-color: var(--primary);
 }
 
@@ -216,6 +256,7 @@
     justify-content: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
@@ -223,6 +264,9 @@
 =======
     background: #ffffff;
 >>>>>>> login-admin
+=======
+    background: #FFFFFF;
+>>>>>>> view-product
     border-radius: 40px;
 }
 
@@ -241,10 +285,14 @@
     font-weight: 900;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
     transition: .5s;
 }
 
 .sidebar .navbar .dropdown-toggle[aria-expanded=true]::after {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -256,6 +304,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     transform: rotate(-180deg);
 }
 
@@ -285,6 +335,7 @@
     justify-content: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #FFFFFF;
 =======
     background: #ffffff;
@@ -292,6 +343,9 @@
 =======
     background: #ffffff;
 >>>>>>> login-admin
+=======
+    background: #FFFFFF;
+>>>>>>> view-product
     border-radius: 40px;
 }
 
@@ -304,10 +358,14 @@
     font-weight: 900;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
     transition: .5s;
 }
 
 .content .navbar .dropdown-toggle[aria-expanded=true]::after {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -319,6 +377,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     transform: rotate(-180deg);
 }
 
@@ -330,11 +390,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Date Picker ***/
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
@@ -364,11 +428,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Testimonial ***/
 .progress .progress-bar {
     width: 0px;
@@ -377,11 +445,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+
+>>>>>>> view-product
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
@@ -400,6 +472,7 @@
     border-radius: 15px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: .5s;
 =======
     transition: 0.5s;
@@ -407,11 +480,15 @@
 =======
     transition: 0.5s;
 >>>>>>> login-admin
+=======
+    transition: .5s;
+>>>>>>> view-product
 }
 
 .testimonial-carousel .owl-dot.active {
     background: var(--dark);
     border-color: var(--primary);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -421,3 +498,6 @@
 =======
 }
 >>>>>>> login-admin
+=======
+}
+>>>>>>> view-product

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\CustomAuthController;
 <<<<<<< HEAD
 =======
@@ -15,6 +16,11 @@ use App\Http\Controllers\CustomAuthAdminController;
 use App\Http\Controllers\CustomAuthAdminController;
 use App\Http\Controllers\ViewAdminController;
 >>>>>>> login-admin
+=======
+use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\ViewUserController;
+use App\Http\Controllers\ProductController;
+>>>>>>> view-product
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +33,7 @@ use App\Http\Controllers\ViewAdminController;
 |
 */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Route::get('/', function () {
     return view('index');
@@ -62,3 +69,7 @@ Route::get('signout', [CustomAuthAdminController::class, 'signOut'])->name('sign
 Route::get('registrationAdmin', [CustomAuthAdminController::class, 'registrationAdmin'])->name('register-admin');
 Route::post('custom-registrationAdmin', [CustomAuthAdminController::class, 'customRegistrationAdmin'])->name('registerAdmin.custom');
 >>>>>>> login-admin
+=======
+Route::get('/', [ProductController::class, 'index'])->name('index');
+Route::get('product/{productId}', [ProductController::class, 'viewProduct'])->name('index.viewProduct');
+>>>>>>> view-product

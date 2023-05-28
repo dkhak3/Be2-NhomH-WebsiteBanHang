@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
+<<<<<<< HEAD
     <link rel="shortcut icon" href="{{ asset ('/img/icon/homepage.png') }}">
+=======
+    <link rel='shortcut icon' href='./assets/img/icon/homepage.png'/>
+>>>>>>> view-product
     <link rel="stylesheet" href="{{ asset ('/css/pagination.css') }}">
     <link rel="stylesheet" href="{{ asset ('/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset ('/css/index.css') }}">
@@ -43,11 +47,16 @@
             <div class="container">
                 <div class="nav-bar-logo">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <a href="">
 =======
                     <a href="index.php">
 >>>>>>> login-user
                         <img src="{{ asset ('/img/files/LOGO.png') }}" alt="Logo" style="max-width: 115px; max-height: 36px">
+=======
+                    <a href="index.php">
+                        <img src="https://avatars.githubusercontent.com/u/94631848?v=4" alt="Logo" style="max-width: 115px; max-height: 36px">
+>>>>>>> view-product
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +66,14 @@
                     <ul class="navbar-nav" style="margin: auto;">
                         <li class="nav-bar-item active">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a href="" class="nav-bar-link active">
 =======
                             <a href="index.php" class="nav-bar-link active">
 >>>>>>> login-user
+=======
+                            <a href="index.php" class="nav-bar-link active">
+>>>>>>> view-product
                                 <span class="nav-bar-title">
                                     Home
                                 </span>
@@ -91,6 +104,7 @@
                         @guest
                             <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <a class="nav-link" href=""><i class="far fa-user"></i></a>
 =======
                                 <a class="nav-link" href="{{ route('login') }}"><i class="far fa-user"></i></a>
@@ -106,10 +120,18 @@
                                     <li class="header__navbar-user-item">
                                         {{-- <a href="{{ route('profile') }}">My Account</a> --}}
 =======
+=======
+                                <a class="nav-link" href="{{ route('login') }}"><i class="far fa-user"></i></a>
+                            </li>
+                        @else
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="https://avatars.githubusercontent.com/u/94631848?v=4" alt="" class="header__navbar-user-img">
+>>>>>>> view-product
                                 <span class="header__navbar-user-name">{{ $user['fullname'] }}</span>
 
                                 <ul class="header__navbar-user-menu">
                                     <li class="header__navbar-user-item">
+<<<<<<< HEAD
 >>>>>>> login-user
                                         <a href="">My Account</a>
                                     </li>
@@ -125,6 +147,18 @@
 =======
                                         <a href="{{ route('signout') }}">Logout</a>
 >>>>>>> login-user
+=======
+                                        <a href="/profile">My Account</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="purchasedproduct.php">Purchased</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="changepassword.php">Change Password</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="{{ route('signout') }}">Logout</a>
+>>>>>>> view-product
                                     </li>
                                 </ul>
                             </li>
@@ -135,7 +169,11 @@
                                     <i class="header__cart-icon fas fa-shopping-cart"></i>
                                     <!-- no cart: header__cart-list--no-cart -->
                                     <div class="header__cart-list header__cart-list--no-cart">
+<<<<<<< HEAD
                                         <img src="{{ asset ('/img/cart/nothing_cart.png') }}" alt="" class="header__cart-no-cart-img">
+=======
+                                        <img src="../../../public/img/cart/nothing_cart.png" alt="" class="header__cart-no-cart-img">
+>>>>>>> view-product
                                         <span class="header__cart-list-no-cart-msg">
                                             No Product
                                         </span>
@@ -185,6 +223,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <li><a class="dropdown-item" href="?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                         </svg></a></li>
@@ -199,6 +238,8 @@
                                         </svg></a></li>
                                 <li><a class="dropdown-item" href="?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
 =======
+=======
+>>>>>>> view-product
                                 <li><a class="dropdown-item" href="index.php?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                         </svg></a></li>
@@ -212,7 +253,10 @@
                                             <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                                         </svg></a></li>
                                 <li><a class="dropdown-item" href="index.php?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+<<<<<<< HEAD
 >>>>>>> login-user
+=======
+>>>>>>> view-product
                                             <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                                         </svg></a></li>
                             </ul>
@@ -318,6 +362,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <li><a class="dropdown-item" href="?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                                     </svg></a></li>
@@ -332,6 +377,8 @@
                                                     </svg></a></li>
                                             <li><a class="dropdown-item" href="?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
 =======
+=======
+>>>>>>> view-product
                                             <li><a class="dropdown-item" href="index.php?sort=5">None <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                                                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                                                     </svg></a></li>
@@ -345,7 +392,10 @@
                                                         <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
                                                     </svg></a></li>
                                             <li><a class="dropdown-item" href="index.php?sort=4">Star: hight to low <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+<<<<<<< HEAD
 >>>>>>> login-user
+=======
+>>>>>>> view-product
                                                         <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                                                     </svg></a></li>
                                         </ul>
@@ -361,10 +411,14 @@
                                     <div class="product-card__image-wr">
                                         <a href="" style="max-width: 480px;">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <img src="{{ asset ('/img/products/beoplay-white.jpg') }}" alt="">
 =======
                                             <img src="{{ asset ('/img/products/beoplay-white.jpg') }}" alt="">                                        
 >>>>>>> login-user
+=======
+                                            <img src="https://thienhaaudio.vn/wp-content/uploads/2021/10/h95-00-600x600.jpg" alt="">
+>>>>>>> view-product
                                         </a>
                                     </div>
 
@@ -471,7 +525,11 @@
                     </div>
                 </div>
                 <div class="footer-payment col-lg-4 col-md-12 text-lg-right text-center">
+<<<<<<< HEAD
                     <img class="mb-4 lazyloaded" src="{{ asset ('/img/files/payma.png') }}" alt="">
+=======
+                    <img class="mb-4 lazyloaded" src="./public/img/files/payma.png" alt="">
+>>>>>>> view-product
                 </div>
             </div>
         </div>

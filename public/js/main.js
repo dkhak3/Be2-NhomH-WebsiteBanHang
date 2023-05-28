@@ -6,6 +6,7 @@
         setTimeout(function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
 =======
@@ -16,12 +17,19 @@
             if ($("#spinner").length > 0) {
                 $("#spinner").removeClass("show");
 >>>>>>> login-admin
+=======
+            if ($('#spinner').length > 0) {
+                $('#spinner').removeClass('show');
+>>>>>>> view-product
             }
         }, 1);
     };
     spinner();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
     
     
     // Back to top button
@@ -60,6 +68,7 @@
     });
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -103,6 +112,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -112,10 +123,14 @@
         loop: true,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
         nav : false
     });
 
 
+<<<<<<< HEAD
 =======
         nav: false,
     });
@@ -126,6 +141,8 @@
     });
 
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Worldwide Sales Chart
     let ctx1 = $("#worldwide-sales").get(0).getContext("2d");
     let myChart1 = new Chart(ctx1, {
@@ -134,10 +151,14 @@
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                     label: "USA",
                     data: [15, 30, 55, 65, 60, 80, 95],
                     backgroundColor: "rgba(0, 156, 255, .7)"
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -150,10 +171,13 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
                 },
                 {
                     label: "UK",
                     data: [8, 35, 40, 60, 70, 55, 75],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     backgroundColor: "rgba(0, 156, 255, .5)"
@@ -163,12 +187,18 @@
 =======
                     backgroundColor: "rgba(0, 156, 255, .5)",
 >>>>>>> login-admin
+=======
+                    backgroundColor: "rgba(0, 156, 255, .5)"
+>>>>>>> view-product
                 },
                 {
                     label: "AU",
                     data: [12, 25, 45, 55, 65, 70, 60],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
                     backgroundColor: "rgba(0, 156, 255, .3)"
                 }
             ]
@@ -179,6 +209,7 @@
     });
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -195,6 +226,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Salse & Revenue Chart
     let ctx2 = $("#salse-revenue").get(0).getContext("2d");
     let myChart2 = new Chart(ctx2, {
@@ -203,11 +236,15 @@
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                     label: "Salse",
                     data: [15, 30, 55, 45, 70, 65, 85],
                     backgroundColor: "rgba(0, 156, 255, .5)",
                     fill: true
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -221,6 +258,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
                 },
                 {
                     label: "Revenue",
@@ -228,6 +267,9 @@
                     backgroundColor: "rgba(0, 156, 255, .3)",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
                     fill: true
                 }
             ]
@@ -238,6 +280,7 @@
     });
     
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -253,6 +296,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
 
     // Single Line Chart
     let ctx3 = $("#line-chart").get(0).getContext("2d");
@@ -262,6 +307,9 @@
             labels: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                 label: "Salse",
                 fill: false,
@@ -275,6 +323,7 @@
     });
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -296,6 +345,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Single Bar Chart
     let ctx4 = $("#bar-chart").get(0).getContext("2d");
     let myChart4 = new Chart(ctx4, {
@@ -304,6 +355,9 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                 backgroundColor: [
                     "rgba(0, 156, 255, .7)",
@@ -321,6 +375,7 @@
     });
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -346,6 +401,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Pie Chart
     let ctx5 = $("#pie-chart").get(0).getContext("2d");
     let myChart5 = new Chart(ctx5, {
@@ -354,6 +411,9 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                 backgroundColor: [
                     "rgba(0, 156, 255, .7)",
@@ -371,6 +431,7 @@
     });
 
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -396,6 +457,8 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
     // Doughnut Chart
     let ctx6 = $("#doughnut-chart").get(0).getContext("2d");
     let myChart6 = new Chart(ctx6, {
@@ -404,6 +467,9 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> view-product
             datasets: [{
                 backgroundColor: [
                     "rgba(0, 156, 255, .7)",
@@ -423,6 +489,7 @@
     
 })(jQuery);
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> login-admin
@@ -448,3 +515,5 @@
 >>>>>>> register-admin
 =======
 >>>>>>> login-admin
+=======
+>>>>>>> view-product
