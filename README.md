@@ -1,0 +1,4 @@
+-   `composer install` -> `composer update` -> `php artisan serve`
+-   thêm file `.evn` -> có thể copy file `.env.example` ra và rename thành `.evn`
+-   trong file `.evn` đổi tên của `DB_DATABASE` thành `DB_DATABASE=store_project`
+-   add database `store_project` vào link `http://localhost/phpmyadmin/`
